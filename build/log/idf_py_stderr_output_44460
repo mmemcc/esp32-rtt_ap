@@ -1,0 +1,33 @@
+Traceback (most recent call last):
+  File "C:\Users\user\esp\esp-idf\tools\kconfig_new\prepare_kconfig_files.py", line 102, in <module>
+    main()
+  File "C:\Users\user\esp\esp-idf\tools\kconfig_new\prepare_kconfig_files.py", line 94, in main
+    env.update(json.load(args.env_file))
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "json\__init__.py", line 293, in load
+UnicodeDecodeError: 'cp949' codec can't decode byte 0xec in position 3198: illegal multibyte sequence
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "C:\Users\user\.espressif\python_env\idf5.1_py3.11_env\Lib\site-packages\kconfgen\__main__.py", line 16, in <module>
+    main()
+  File "C:\Users\user\.espressif\python_env\idf5.1_py3.11_env\Lib\site-packages\kconfgen\core.py", line 316, in main
+    env = json.load(args.env_file)
+          ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "json\__init__.py", line 293, in load
+UnicodeDecodeError: 'cp949' codec can't decode byte 0xec in position 3198: illegal multibyte sequence
+CMake Error at C:/Users/user/esp/esp-idf/tools/cmake/kconfig.cmake:176 (message):
+  Failed to run kconfgen
+  (C:/Users/user/.espressif/python_env/idf5.1_py3.11_env/Scripts/python.exe;-m;kconfgen;--list-separator=semicolon;--kconfig;C:/Users/user/esp/esp-idf/Kconfig;--sdkconfig-rename;C:/Users/user/esp/esp-idf/sdkconfig.rename;--config;G:/My
+  Drive/minji/연구실/과제/KPS
+  실내항법/rtt실험/ESP32/code/ftm_ap/sdkconfig;--defaults;G:/My
+  Drive/minji/연구실/과제/KPS
+  실내항법/rtt실험/ESP32/code/ftm_ap/sdkconfig.defaults;--env-file;G:/My
+  Drive/minji/연구실/과제/KPS
+  실내항법/rtt실험/ESP32/code/ftm_ap/build/config.env).  Error 1
+Call Stack (most recent call first):
+  C:/Users/user/esp/esp-idf/tools/cmake/build.cmake:611 (__kconfig_generate_config)
+  C:/Users/user/esp/esp-idf/tools/cmake/project.cmake:547 (idf_build_process)
+  CMakeLists.txt:8 (project)
+
+
